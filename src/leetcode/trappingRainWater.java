@@ -1,5 +1,6 @@
 package leetcode;
 
+// 题号：42
 public class trappingRainWater {
     /**
      * Tips: dp
@@ -8,7 +9,7 @@ public class trappingRainWater {
      * @param height height list
      * @return how much water it is able to trap after raining.
      */
-    public int trap(int[] height) {
+    public int trap_dp(int[] height) {
         if (height == null || height.length == 0) return 0;
         int res = 0;
         int size = height.length;
@@ -24,6 +25,34 @@ public class trappingRainWater {
         }
         for (int i = 1; i < size-1; i++) {
             res += Math.min(leftMax[i], rightMax[i]) - height[i];
+        }
+        return res;
+    }
+
+    /**
+     * Tips: two pointer
+     * Time complexity: O(n)
+     * Space complexity: O(1)
+     * @param height height list
+     * @return how much water it is able to trap after raining.
+     */
+    public int trap_two_pointer(int[] height) {
+        int l = 0;
+        int r = height.length - 1;
+        int res = 0;
+        int lMax = 0;
+        int rMax = 0;
+        while (l < r) {
+            if (height[l] < height[r]) {
+                if (height[l] >= lMax) lMax = height[l];
+                else res += (lMax - height[l]);
+                l++;
+            }
+            else {
+                if (height[r] >= rMax) rMax = height[r];
+                else res += (rMax - height[r]);
+                r--;
+            }
         }
         return res;
     }

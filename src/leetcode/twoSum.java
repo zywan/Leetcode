@@ -3,13 +3,13 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+//题号: 1
 public class twoSum {
     /**
-     * 题号: 1
      * Tips: using hashmap to store the value and index
      * Time complexity: O(n)
      * Space complexity: O(n)
-     * @param nums: list of number
+     * @param nums: a list of number
      * @param target: target number
      * @return indices of the two numbers such that they add up to a specific target.
      * Example:

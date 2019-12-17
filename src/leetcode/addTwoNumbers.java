@@ -1,6 +1,8 @@
 package leetcode;
 
+// 题号: 2
 public class addTwoNumbers {
+
     // Definition for singly-linked list.
     public class ListNode {
       int val;
@@ -9,7 +11,6 @@ public class addTwoNumbers {
     }
 
     /**
-     * 题号: 2
      * Tips: using while loop, pay attention to carry out
      * Time complexity: O(max(m,n))
      * Space complexity: O(max(m,n))
