@@ -54,6 +54,7 @@ public class possibleBipartition {
         if (color.containsKey(node)) return color.get(node) == c;
         color.put(node, c);
         for (int neighbor : graph[node]) {
+            // ^ is XOR operator
             if (!dfs(neighbor, c ^ 1)) return false;
         }
         return true;
