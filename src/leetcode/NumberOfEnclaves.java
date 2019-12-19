@@ -4,6 +4,7 @@ public class NumberOfEnclaves {
     /**
      * tips: DFS (almost same as number of island)
      * sink all the boundary island and then count the number of 1
+     *
      * Time complexity: O(m*n)
      * Space complexity: O(m*n)
      */

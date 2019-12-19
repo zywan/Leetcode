@@ -7,11 +7,13 @@ import java.util.Map;
 public class longestSubstringWithoutRepeatingCharacters {
     /**
      * Tips: sliding window
+     *
      * Time complexity: O(n)
      * Space complexity: O(min(m,n))
      * upper bounded by the size of the string n and the size of the charset/alphabet m
      * @param s: String
      * @return length of longest substring
+     *
      * Example
      * Input: "abcabcbb"
      * Output: 3

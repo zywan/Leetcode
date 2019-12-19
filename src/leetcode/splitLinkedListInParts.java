@@ -17,6 +17,7 @@ public class splitLinkedListInParts {
      * If there are N nodes in the linked list root,
      * then there are N/k items in each part,
      * plus the first N%k parts have an extra item.
+     *
      * Time complexity: O(n+k)
      * Space complexity: O(max(k,n))
      */

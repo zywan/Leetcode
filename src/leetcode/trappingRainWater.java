@@ -4,8 +4,10 @@ package leetcode;
 public class trappingRainWater {
     /**
      * Tips: dp
+     *
      * Time complexity: O(n)
      * Space complexity: O(n)
+     *
      * @param height height list
      * @return how much water it is able to trap after raining.
      */
@@ -31,8 +33,10 @@ public class trappingRainWater {
 
     /**
      * Tips: two pointer
+     *
      * Time complexity: O(n)
      * Space complexity: O(1)
+     *
      * @param height height list
      * @return how much water it is able to trap after raining.
      */
