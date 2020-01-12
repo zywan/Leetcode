@@ -1,6 +1,6 @@
 package leetcode;
 // 题号:1020
-public class NumberOfEnclaves {
+public class numberOfEnclaves {
     /**
      * tips: DFS (almost same as number of island)
      * sink all the boundary island and then count the number of 1
